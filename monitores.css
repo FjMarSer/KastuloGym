@@ -1,0 +1,183 @@
+
+.fonts {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+  }
+  
+body {
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: start;
+  width: 100%;
+  flex-direction: column;
+  }
+  
+  
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;     
+  align-items: center;
+  box-sizing: border-box;
+  transition: 0.5s; 
+  background-color: #5d5d5d;
+  z-index: 1000;
+  }
+  
+.logo {
+  height: 90%;
+  float: left;
+  }
+  
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+
+.main-nav li {
+  margin: 0;
+  padding: 0 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  }
+  
+.main-nav li a {
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+.main-nav li:hover {
+  background-color: gray;
+  color: gray;
+  }
+
+.titulo-monitores {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 120px;
+ }
+    
+.monitores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;   
+  gap: 40px;           
+  height: auto;         
+  padding: 20px;
+  margin: 20px auto;     
+  max-width: 900px;       
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #524840, #eaeaea);
+}
+
+.monitor1, .monitor2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.monitor1:hover, .monitor2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.monitor1 img {
+  order: -1; 
+  width: 150px;
+  height: 250px;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+
+.monitor2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.monitor1 p, .monitor2 p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .monitores {
+    flex-direction: column;
+    padding: 10px;
+    margin: 80px auto;
+  }
+
+  .monitor1, .monitor2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .monitor1 img, .monitor2 img {
+    margin: 0 0 10px 0;
+  }
+
+  .monitor1 p, .monitor2 p {
+    text-align: center;
+  }
+}
+footer {
+  background-color: gray;
+  height: 100%; 
+  text-align: start;
+  color: white;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer ul {
+  list-style-type: none;
+  color: black;
+}
+
+
+
+
+
+

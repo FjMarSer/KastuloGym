@@ -1,0 +1,144 @@
+
+.fonts {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Permite organizar el contenido verticalmente */
+}
+
+header {
+     height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.5s; /* Corrige la coma */
+    background-color: #5d5d5d;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+}
+
+.logo {
+    height: 90%;
+    float: left;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-nav li {
+    margin: 0;
+    padding: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-nav li a {
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav li:hover {
+    background-color: gray;
+    color: gray;
+}
+
+.banner {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.imagenes-centro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centrar las columnas horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 40px; /* Espaciado opcional alrededor */
+    margin-top: 250px;
+    
+
+}
+
+.imagenes-centro div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes-centro img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsión */
+    border-radius: 8px; /* Esquinas redondeadas opcionales */
+}
+
+.imagenes-centro img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la imagen */
+   
+}
+
+section {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p  {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+}
+footer {
+   
+    background-color: #5d5d5d;
+    height: 100%; 
+    text-align: start;
+    color: white;
+    padding: 1rem;
+    margin-top: auto; 
+}
+
+footer ul {
+    list-style-type: none;
+    color: black;
+}
+
+
