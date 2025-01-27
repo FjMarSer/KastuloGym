@@ -118,21 +118,6 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.monitor1 img {
-  order: -1; 
-  width: 150px;
-  height: 250px;
-  border-radius: 20%;
-  margin-right: 20px;
-}
-
-.monitor2 img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
 .monitor1 p, .monitor2 p {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
@@ -152,10 +137,6 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
-  }
-
-  .monitor1 img, .monitor2 img {
-    margin: 0 0 10px 0;
   }
 
   .monitor1 p, .monitor2 p {
